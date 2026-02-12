@@ -2,3 +2,4 @@ title: ""
 description: ""
 show_downloads: false
 theme: jekyll-theme-minimal
+layout: none
