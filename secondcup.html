@@ -7,7 +7,6 @@
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
@@ -16,90 +15,149 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #111;
+    }
+
+    .navbar {
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+      margin-left: 1.5rem;
+    }
+
+    .nav-link.active {
+      font-weight: 600;
+      color: #000 !important;
+    }
+
+    .page-section {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+
+    .page-title {
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .lead-subtle {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: #444;
+      margin-bottom: 1.5rem;
+    }
+
+    .content-text {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 1.25rem;
+    }
+
+    .newsletter-embed {
+      margin-top: 2.5rem;
+      max-width: 480px;
+    }
+
+    footer {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      color: #777;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-  <div class="container">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container">
 
-    <!-- Logo -->
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="TheSecondCup-logo.png" alt="The Second Cup" height="45" class="me-2">
-    </a>
+      <a class="navbar-brand" href="index.html">
+        <img src="TheSecondCup-logo.png" alt="The Second Cup" height="45">
+      </a>
 
-    <!-- Mobile Toggle -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Nav Links -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active fw-semibold" href="secondcup.html">The Second Cup</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="services.html">Professional Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="rewireme.html">RewireMe</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="secondcup.html">The Second Cup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Professional Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rewireme.html">RewireMe</a>
+          </li>
+        </ul>
+      </div>
+
     </div>
+  </nav>
 
-  </div>
-</nav>
+  <!-- Main Content -->
+  <section class="page-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
 
-<!-- Main Content -->
-<main class="py-5">
-  <div class="container" style="max-width: 800px;">
+          <h2 class="page-title">The Second Cup</h2>
 
-    <h1 class="mb-4">Welcome</h1>
+          <p class="lead-subtle">
+            Real-world reflections on work, leadership, and life under real constraints.
+          </p>
 
-    <p class="lead">
-      The Second Cup is my newsletter where I share thoughtful, real-world reflections on work, life, and leadership under real constraints.
-    </p>
+          <p class="content-text">
+            The Second Cup is my newsletter where I share thoughtful reflections shaped by lived experience.
+            Each edition centers on meaningful inflection points — from career shifts to personal tradeoffs — with the benefit of hindsight.
+          </p>
 
-    <p>
-      Each edition centers on meaningful inflection points, from career shifts to personal tradeoffs, with the benefit of hindsight.
-      If something here helps you feel seen, think differently, or avoid a mistake I once made, then it’s done its job.
-    </p>
+          <p class="content-text">
+            If something here helps you feel seen, think differently, or avoid a mistake I once made, then it has done its job.
+          </p>
 
-    <p>
-      You can subscribe here for free so each edition lands straight in your inbox.
-    </p>
+          <p class="content-text">
+            You can subscribe below for free so each edition lands directly in your inbox.
+          </p>
 
-    <!-- Substack Embed -->
-    <div class="d-flex justify-content-center mt-4">
-      <iframe 
-        src="https://secondcup.substack.com/embed" 
-        width="100%" 
-        height="320" 
-        style="max-width:480px; border: 1px solid #EEE; background: white;" 
-        frameborder="0" 
-        scrolling="no">
-      </iframe>
+          <!-- Substack Embed -->
+          <div class="newsletter-embed">
+            <iframe 
+              src="https://secondcup.substack.com/embed" 
+              width="100%" 
+              height="320"
+              style="border: 1px solid #eee; background: #fff;"
+              frameborder="0"
+              scrolling="no">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
-</main>
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      © 2026 Vasantha Gullapalli
+    </div>
+  </footer>
 
-<!-- Footer -->
-<footer class="border-top py-4 text-center">
-  <div class="container">
-    <p class="mb-0 small text-muted">&copy; 2026 Vasantha Gullapalli</p>
-  </div>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
