@@ -17,6 +17,33 @@
     body {
       font-family: 'Inter', sans-serif;
     }
+    .page-section {
+      padding: 2rem 0;
+    }
+    .service-column h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .service-card {
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      padding: 0.65rem 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    .service-card h6 {
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+    .service-card p {
+      font-size: 0.8rem;
+      color: #6c757d;
+      margin-bottom: 0;
+    }
+    .divider {
+      border-left: 1px solid #dee2e6;
+    }
   </style>
 </head>
 
@@ -58,81 +85,65 @@
 
 <!-- Main Content -->
 <section class="page-section">
- <div class="container" style="max-width: 900px;">
-    <h2 class="mb-4">Organization Development & Mentorship</h2>
+  <div class="container" style="max-width: 960px;">
 
-    <p>
-      Since stepping away from Amazon in 2025, I’ve intentionally designed the next phase of my personal and professional life. Alongside long-standing personal interests, I am focused on giving back to the industry by enabling leaders and strengthening organizations.
+    <h2 class="mb-2">Professional Services</h2>
+    <p class="mb-4 text-muted" style="font-size: 0.95rem;">
+      Since stepping away from Amazon in 2025, I’ve intentionally designed the next phase of my personal and professional life. 
+      </p>
+      <p>Alongside long-standing personal interests, I am focused on giving back to the industry by enabling leaders through <b>1:1 mentoring</b> and <b>strengthening organizations</b> through consulting and fractional roles.
     </p>
 
-    <p>
-      I am most effective in consulting and fractional leadership roles, where I help organizations scale by developing leadership capability and removing execution bottlenecks through clear, scalable operating mechanisms.
-    </p>
+    <div style="display: flex; gap: 2.5rem; align-items: flex-start;">
 
-    <p>
-      I am selective about engagements and take on work that genuinely excites me. That excitement is usually driven by a combination of the people and the mission.
-      Here are some ways I can help your organization grow and succeed:
-    </p>
-
-    <div class="row g-4">
-
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="card-title">Hiring & Developing Talent</h5>
-            <p class="card-text">
-              Build data-driven hiring, performance, and talent management processes that raise the talent bar and strengthen leadership pipelines.
-            </p>
+      <!-- Column 1: Mentoring -->
+      <div style="flex: 1; min-width: 0;" class="service-column">
+        <h3>1:1 Mentoring</h3>
+        <p style="font-size: 0.9rem;">
+          I mentor mid-to-senior leaders in tech, women in tech, and professionals balancing career ambition with the rest of life. My focus is on helping leaders scale impact, navigate transitions, and design careers aligned with what truly matters.
+        </p>
+        <p style="font-size: 0.9rem;">
+          I mentor leaders who want to move beyond the "autopilot" career. I specialize in helping you:  
+          </p>
+        <div class="service-card">
+          <h6>Scale your impact in high-pressure engineering environments.</h6>
           </div>
-        </div>
+        <div class="service-card">
+          <h6>Plan and manage transitions between industries or roles.</h6>
+          </div>
+        <div class="service-card">
+          <h6>Design a career that aligns with what truly matters to you</h6>
+          </div>
       </div>
 
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="card-title">Leadership Development</h5>
-            <p class="card-text">
-              Mentor and develop emerging leaders to build leaders who scale and develop others.
-            </p>
+      <!-- Vertical divider -->
+      <div style="width: 1px; background: #dee2e6; align-self: stretch;"></div>
+
+      <!-- Column 2: Organization Development -->
+      <div style="flex: 1; min-width: 0;" class="service-column">
+        <h3>Organization Development</h3>
+        <p style="font-size: 0.9rem;">
+          I help organizations scale by developing leadership capability and removing execution bottlenecks. I take on work that genuinely excites me, driven by the people and the mission.</p>
+          <p style="font-size: 0.9rem;">Here are some ways I can help your organization grow and succeed:
+        </p>
+
+        <div class="service-card">
+          <h6>Hiring & Developing Talent</h6>
           </div>
-        </div>
+        <div class="service-card">
+          <h6>Leadership Development</h6>
+         </div>
+        <div class="service-card">
+          <h6>Organization Design</h6>
+          </div>
+        <div class="service-card">
+          <h6>Operational Excellence</h6>x
+          </div>
       </div>
 
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="card-title">Organization Design</h5>
-            <p class="card-text">
-              Design organizational structures that balance collaboration with clear accountability.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body">
-            <h5 class="card-title">Operational Excellence</h5>
-            <p class="card-text">
-              Audit and optimize operating mechanisms to improve execution quality, predictability, and scalability.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  <hr class="my-5">
-    <h3 class="mb-4">1:1 Mentorship</h3>
-
-    <p>
-      I mentor mid-to-senior leaders in tech, women in tech, and professionals balancing career ambition with the rest of life. My work focuses on helping leaders scale impact in high-pressure engineering environments, navigate transitions, and design careers aligned with what truly matters.
-    </p>
-
-    <p>
-      Mentorship and coaching are offered through 
-      <a href="https://topmate.io/vasantha_gullapalli" class="fw-semibold">Topmate</a>.
-    </p>
- <div class="container" style="max-width: 900px;">
- </section>
+    </div><!-- end flex row -->
+  </div>
+</section>
 
 <!-- Footer -->
 <footer class="border-top py-4 text-center">
